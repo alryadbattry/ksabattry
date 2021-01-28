@@ -1,0 +1,97 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav{
+	width: 100%;
+	margin-top: 40px auto;
+	
+height: 50px;
+
+	background-color: rgb(255, 152, 0);
+}
+.container{
+    width: 900px;
+    height: 700px;
+    margin: 50px auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .4),
+    0 0 8px rgba(0, 0, 0, .4);
+    direction: rtl;
+}
+.title{
+width: 100%;
+height: 100px;
+
+}
+.title label{
+   position: absolute;
+   top: 15%;
+   right: 33%;
+   font-size: 20px;
+}
+.title input{
+    text-align: center;
+    outline: none;
+    width: 350px;
+    height: 40px;
+    margin: 35px auto;
+    position: absolute;
+    right: 40%;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding-right: 12px;
+    font-size: 20px;
+    
+}
+placeholder{
+    text-align: center;
+}
+.img{
+    width: 100%;
+    height: 100px;
+   
+}
+.img label{
+    position: absolute;
+   top: 25%;
+   right: 31%;
+   font-size: 20px;
+}
+.img  input{
+    position: absolute;
+    right: 40%;
+    margin-top: 32px;
+   
+}
+.area{
+  
+    width: 100%;
+
+    resize: none;
+}
+.area label{
+position: relative;
+right: 35%;
+font-size: 20px;
+}
+.area textarea{
+margin-top: 12px;
+resize: none;
+height: 200px;
+font-size: 30px;
+padding: 12px;
+}
+.btn{
+    width: 100%;
+    height: 100px;
+}
+.btn input{
+    position: absolute;
+    bottom: 25px;
+    right: 45%;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}

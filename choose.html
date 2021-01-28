@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ar" >
+    <head>
+        <meta charset="utf-8">
+        <title>KSA Battery</title>
+        <link rel="shortcut icon" href="..\images\icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/Scrollbar.css">
+        <link rel="stylesheet" type="text/css" href="choose.css">
+        <link rel="stylesheet" type="text/css" href="../css/test.css">
+        <link rel="stylesheet" type="text/css" href="../font1/all.min.css">
+        <link rel="stylesheet" type="text/css" href="../font1/fontawesome.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            nav{
+                height:80px;
+
+            }
+            nav h2{
+                position:absolute;
+                top:-25px;
+               right:18px;
+            }
+            nav ul{
+                line-height: 80px;
+            }
+            nav h2::first-letter{
+    font-size: 80px;
+    text-decoration: underline rgb(255, 140, 0);
+}
+.title{
+    width: 900px;
+    height: 1200px;
+     position: absolute;
+     top: 180%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+      box-shadow: 0 0 8px rgba(0,0,0, .5),
+                   0 0 8px rgba(0,0,0, .5);
+      direction: rtl;
+      margin-top: 60px;
+}
+.title_1{
+    padding: 10px;
+}
+.title_1 h1{
+    background-color: #000;
+    padding: 7px;
+    margin-bottom: 10px;
+    color: #fc0;
+}
+.title_1 h3{
+    color:rgb(255, 140, 0);
+    margin-right: 10px;
+}
+.title_1 p{
+    line-height:2;
+    word-spacing: 1.5;
+    margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            font-family: 'Droid Arabic Kufi';
+}
+.social{
+    position: fixed;
+    top: 50%;
+    right:1%;
+    /* width: 100px; */
+    float: right;
+    display: flex;
+   flex-direction: column;
+    z-index: 10;
+    margin-left: 15px;
+    box-shadow:none;
+  
+}
+.social a{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 2px;
+   padding: 12px 17px;
+    line-height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    font-size: 30px;
+}
+
+.social a:nth-child(1) {
+    background: green;
+    color: #fff;
+}
+.social a:hover{
+    background-color: rgb(23, 158, 23);
+} 
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 100px;
+    margin-right: 20px;
+    cursor: pointer;
+   z-index: 10;
+   display: none;
+   
+}
+#check{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+}
+@media screen and (max-width:952px){
+    nav h2{
+        position: absolute;
+        top: 40px;
+        right: 25px;
+    }
+    nav h2:first-letter{
+    font-size:14px;
+
+    }
+    nav ul{
+    float: left;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    padding: 12px 7px;
+    margin-right:5px;
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width:858px)
+{
+    nav{
+        position:fixed;
+        top:0;
+        left:0;
+    }
+    .checkbtn{
+        display: block;
+        z-index: 10;
+    }
+    
+    ul{
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .8);
+        top: 80px;
+        right: -100%;
+        text-align: center;
+        transition: all .9s linear;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        right: 0;
+    }
+   
+   .cont{
+    width: 100%;
+    height:280px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.title{
+    width:100%;
+    height: 1200px;
+    float:left;
+     position: position;
+     top:0;
+     left:0;
+     margin-top:550px;
+     transform: translate(0);
+      box-shadow: none;
+}
+.titel .title_1{
+width:100%;
+height:100%;
+}
+.titel .title_1 h1{
+    widht:100%;
+}
+.titel .title_1 h3{
+
+        position: absolute;
+        top: 50px;
+        left: 20px;
+     }
+.titel .title_1 p{
+ width:100%;
+}
+footer{
+
+    position: relative;
+    margin-top: 250%;
+}
+footer .info{
+float: right;
+margin: 0 3px;
+color:rgba(255, 140, 0);
+}
+footer .info2{
+    float: left;
+}
+footer .aboutme{
+    width: 100%;
+    height: 60px;
+    line-height: 40px;
+     position: absolute;
+    bottom: 15px;
+    border: 2px dotted #fff;
+    color: #000;
+    background-color: rgb(247, 136, 0);
+    z-index: 5;
+}
+}
+
+       </style>
+
+    </head>
+    <body>
+<!--start Navigation-->
+<nav>
+
+    <!-- <h2 >KSA <span>Battery</span></h2> -->
+    <input type="checkbox" id="check" style=" float:right; margin-right:30px;margin-top:20px;">
+            <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+            </label>
+            <span>KSABattery</span>
+     <ul>
+         <li ><a href="#" class="aa" style="border-bottom:2px solid #fff;">اختبار البطارية</a></li>
+         <li><a href="pro.html" >المنتجات</a></li>
+         <li><a href="index.html">الرئيسية</a></li>
+     </ul>
+     
+</nav>
+
+<div class="cont image">
+    <img src="images\x7.jpg">
+
+</div>
+<div class="title">
+    <div class="title_1">
+    <h1>القياس</h1>
+    <h3>ضمان تدابير السلامة</h3>
+    <p>
+        يجب لدى القيام بمعاينة أية بطارية فحص النواحي المذكورة أدناه قبل البدء بعملية الإختبار :
+        <br>
+        • الأقطاب المتزحزحة من مكانها و المتراخية أو المنزوعة .<br>
+        • العلبة أو الغطاء المكسور أو المتشقق.<br>
+        • الصمامات المنزوعة أو المكسورة أو المسدودة، منافث خروج الغاز المسدودة.<br>
+        • تابع بالخطوات التي تلي إذا كانت البطارية بحالة سليمة</p>
+    <h3>قياس مستوى الشحن</h3>
+    <p>
+        قم بقياس جهد الدائرة المفتوحة بمقياس الفولتميتر الحساس.
+        <br>
+        
+        ملاحظة:
+        <br>
+         لا يقاس وضع الشحن لأية بطارية بأي شكل من الأشكال
+          إذا كانت البطارية موجودة على السيارة أو إذا كانت البطارية قد شحنت مجدداً. 
+         حيث يوجد
+         <br>
+          في هذا الوضع شحن سطحي عالي الجهد ( الفولت) ولكن غير صحيح. 
+         ويجب من أجل إزالة الشحن السطحي إستعمال 15x15 أمبير 
+         <br>
+         أو بتشغيل المصابيح الأمامية لمدة 15 دقيقة إذا كانت البطارية موجودة على السيارة
+         <br></p>
+         <h1>التخزين</h1>
+    <h3>التدابير الأمنية الواجب إتخاذها
+    </h3>
+    <p>
+        يمكن تخزين بطاريات Ca-Ca السائلة المشحونة التي لا تتطلب صيانة لمدة 6 أشهر،
+         والبطاريات الهجينة لمدة 3 أشهر دون أن تفقد شحنتها.
+         <br>
+          وتتعرض البطاريات إلى التلف في حالة التخزين بدون شحن.
+           يجب حفظ جميع البطاريات في مكان جاف وبارد،
+          كما يجب في حالة البطاريات<br> السائلة
+           القيام بتخزينها في وضع مستوي ووضع عوازل ( مثل ألواح الستيربور)
+           بينها بالتأكيد في حالة القيام بتخزينها فوق بعضها البعض .
+           <br>
+          ويجب أن يكون السطح العلوي للبطارية نظيفاً.</p>
+
+          <h1>عملية الشحن</h1>
+          <h3>إتخذ تدابير السلامة</h3>
+          <p>
+            1،280 غ/سم³ لمحلول الإستقطاب في سائر الخلايا. وتوقف عملية الشحن لدى الوصول إلى هذه القيمة.<br>
+             بعد ترك البطارية بهذا الوضع لمدة نصف ساعة
+             يتم تعديل مستوى محلول الإستقطاب على حد الخط الأعظمي ومن ثم تمسح البطارية وبعدها يتم تركيبها على السيارة.
+             يتم شحن البطاريات المخزنة المغمورة المشحونة أو البطاريات الفارغة القادمة من العملاء حسب مستوى شحنها وفقاً للتيار والمدة الزمنية المبينة في الجداول
+              أدناه. ومع ذلك فقد لا يمكن التوصل إلى الكثافة المطلوبة في حالة البطاريات المستعملة. ويعتبر الشحن كافياً في حالة عدم الوصول إلى تغيير في الكثافة المعدلة في هذه البطاريات خلال آخر ساعتين من عملية الشحن. أما بالنسبة للبطاريات المغلقة بالكامل بدون صمامات يتم تطبيق الشحن وفقاً لقيم الجهد(الفولت).
+            • تأكد من أن جهاز الشحن غير فعَّال.
+            • حدد مستوى شحن البطارية.
+            • إربط البطارية بجهاز الشحن. القطب الموجب إلى الموجب والقطب السالب إلى السالب. تأكد من عدم توصيل الأقطاب بشكل معاكس.
+            • قم بإختيار قيم التيار والفولت حسب إرشادات وخصائص جهاز الشحن ومن ثم باشر بعملية الشحن.
+            • أطفئ الجهاز بعد إتمام الشحن قبل الفصل عن الأقطاب .
+            • قم بقياس جهد الدائرة المفتوحة والكثافة من أجل التوصل إلى معرفة وجود أو عدم وجود الحاجة للشحن مرة أخرى.
+            جهد (فولت) الدائرة المفتوحة = 11.70 فولت- 12.40 فولت      
+            
+            جهد (فولت) الدائرة المفتوحة = ˃ 11.70 فولت
+            
+            طاقة البطارية ((Ah . مدة شحن البطارية.
+            • يمكنك شحن عدة بطاريات بنفس الطاقة وفي نفس الوقت بشكل متوازي.
+            • تتجمد البطاريات الفارغة في الأجواء الباردة في درجات حرارة أدنى ( -5 درجات -10 درجات) .
+            • لا تحاول القيام بشحن بطارية متجمدة ؛ تأكد قبل البدء بعملية الشحن بأن درجة الحرارة هي في حدود درجة حرارة الغرفة.
+            • الإفراط في الشحن يؤدي إلى تقصير العمر الإفتراضي للبطارية.
+          </p>
+
+</div>
+</div>
+<div class="social">
+    <a href="https://wa.link/s6vi67"><i class="fab fa-whatsapp"></i></a>
+   </div>
+   <div class="clrarfix"></div>
+      <footer>
+           <div class="father">
+               <div class="children">
+                   <div class="son">
+                       <a href="pro.html" style="text-decoration:none"><img src="images/k10.ico"></a>
+                   </div>
+               </div>
+               <div class="children">
+                   <div class="son">
+                   <a href="pro.html" style="text-decoration:none"><img src="images/k8.ico"></a>
+                   </div>
+               </div>
+               <div class="children">
+                   <div class="son">
+                       <a href="pro.html" style="text-decoration:none"><img src="images/k9.ico"></a>
+                   </div>
+               </div>
+               <div class="children">
+                   <div class="son">
+                   <a href="pro.html" style="text-decoration:none"><img src="images/k11.ico"></a>
+                   </div>
+               </div>
+               <div class="children">
+                   <div class="son">
+                   <a href="pro.html" style="text-decoration:none"><img src="images/5.ico"></a>
+                   </div>
+               </div>
+               <div class="children">
+                   <div class="son">
+                   <a href="pro.html" style="text-decoration:none"><img src="images/6.ico"></a>
+                   </div>
+               </div>
+               <div class="children">
+                   <div class="son">
+                   <a href="pro.html" style="text-decoration:none"><img src="images/7.ico"></a>
+                   </div>
+               </div>
+           </div>
+         <div class="aboutme">
+        <h2 style="color: #000;">
+            &copy;برمـجـة و تـطويـر : النــجـم ســوفـت
+        </h2>
+         </div>
+       </footer>
+    </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>KSA Battery</title>
+        <link rel="shortcut icon" href="..\images\icon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="design.css">
+        <!-- <link rel="stylesheet" href="../css/Scrollbar.css"> -->
+        <link rel="stylesheet" type="text/css" href="../font1/all.min.css">
+        <link rel="stylesheet" type="text/css" href="../font1/fontawesome.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            nav{
+                height:95px;
+
+            }
+            nav span{
+                /* position:absolute;
+                top:-10px;
+                 margin-right:-9px; */
+                 float:right;
+                 margin-right:20px;
+                 line-height:90px;
+                 text-transform:uppercase;
+            }
+            nav ul{
+                line-height: 105px;
+                margin-right:-10px;
+            }
+            nav span::first-letter{
+    font-size: 60px;
+    color:rgb(255, 140, 0);
+    text-decoration: underline rgb(255, 140, 0);
+}
+   @media screen and (max-width:858px){
+       .fooer_1{
+           float:right;
+       }
+       .fooer_1 span{
+        float:right;
+        margin-bottom:15px;
+       }
+       .fooer_1 section:nth-child(1){
+           margin-top:20px;
+       }
+       .fooer_2{
+           float:left;
+       }
+   }
+        </style>
+    </head>
+    <body>
+        <!--start Navigation-->
+        <nav> <span>KSABattery</span>
+            <input type="checkbox" id="check" style=" float:right; margin-right:30px;margin-top:20px;">
+            <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                </li>
+                 <li><a href="choose.html">اختيار البطارية</a></li>
+                 <li><a href="pro.html">المنتجات</a></li>
+                 <li><a href="#" class="aa" style="border-bottom:2px solid #fff;">الرئيسية</a></li>
+             </ul>
+        </nav>
+        <!--End Navigation-->
+        <!--start Slide-->
+        <div class="container middle">
+            <div class="slide">
+             
+                <div class="slides s">
+                    <img src="images\varta.png">
+                </div>
+                <div class="slides ">
+                    <img src="images\p2.jfif">
+                </div>
+                <div class="slides ">
+                    <img src="images\2.jpg">
+                </div>
+                <div class="slides ">
+                    <img src="images\w6.jfif">
+                </div>
+                <div class="slides ">
+                    <img src="images\w4.jfif">
+                </div>
+            </div>
+            
+        </div>
+        <!--End Slide-->
+        <!--start Content-->
+        <div class="con m">
+           <?php
+           $connect ="Server=MYSQL5025.site4now.net;Database=db_a6e846_alryadb;Uid=a6e846_alryadb;Pwd=aaxxmm0010";
+           $getPro="select title,image,information from product";
+           $runPro=mysqli_query($connect,$getPro);
+           while($rowPro=mysqli_fetch_array($runPro)){
+             echo'
+             <div class="box">
+                        <div class="img_box">
+                            <img src="../admin/image/'.$rowPro['image'].'  ">
+                            <div class="containt2">
+                               <h3>'.$rowPro['title'].'</h3>
+                               <p > 
+                               '.$rowPro['information'].'
+                               </p>
+                           </div>
+                        </div> 
+                    </div>
+             ';
+           }
+           ?>
+        </div>
+        <!--End Content-->
+        <!--start Service-->
+        <div>
+        </div>
+        <!--End Service-->
+         <!--start Social Medial-->
+         <div class="social">
+          <a href="https://wa.link/s6vi67"><i class="fab fa-whatsapp" ></i></a>
+          <!-- <a href="#" ><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-snapchat"></i></a> -->
+         </div>
+        <!--End Footer-->
+        
+        <div class="clrarfix"></div>
+       <footer>
+           <div class="father">
+               <div class="children">
+                   <div class="son">
+                       <a href="pro.html" style="text-decoration:none"><img src="images/k10.ico"></a>
+                   </div>
+               </div>
+               <div class="children">
+                   <div class="son">
+                   <a href="pro.html" style="text-decoration:none"><img src="images/k8.ico"></a>
+                   </div>
+               </div>
+               <div class="children">
+                   <div class="son">
+                       <a href="pro.html" style="text-decoration:none"><img src="images/k9.ico"></a>
+                   </div>
+               </div>
+               <div class="children">
+                   <div class="son">
+                   <a href="pro.html" style="text-decoration:none"><img src="images/k11.ico"></a>
+                   </div>
+               </div>
+               <div class="children">
+                   <div class="son">
+                   <a href="pro.html" style="text-decoration:none"><img src="images/5.ico"></a>
+                   </div>
+               </div>
+               <div class="children">
+                   <div class="son">
+                   <a href="pro.html" style="text-decoration:none"><img src="images/6.ico"></a>
+                   </div>
+               </div>
+               <div class="children">
+                   <div class="son">
+                   <a href="pro.html" style="text-decoration:none"><img src="images/7.ico"></a>
+                   </div>
+               </div>
+           </div>
+         <div class="aboutme">
+        <h2 style="color: #000;">
+            &copy;برمـجـة و تـطويـر : النــجـم ســوفـت
+        </h2>
+         </div>
+       </footer>
+    </body>
+</html>
+       
